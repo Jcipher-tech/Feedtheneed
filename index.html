@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feed The Need</title>
+<style>
+/* ----------------- GLOBAL ----------------- */
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0c10;
+    color: #fff;
+    overflow-x: hidden;
+}
+h1,h2,h3 {margin:0; padding:0;}
+button {cursor:pointer;}
+
+/* ----------------- NAV ----------------- */
+nav {
+    position: fixed; top:0; left:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    padding:15px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    z-index:100;
+}
+nav button {
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background: #45a29e;
+    color:#fff;
+    transition:0.3s;
+}
+nav button:hover {background:#66fcf1; color:#000;}
+
+/* ----------------- SECTIONS ----------------- */
+section {display:none; padding:120px 20px; min-height:100vh;}
+.active {display:block;}
+
+/* ----------------- HOME ----------------- */
+#home {text-align:center;}
+#home h1 {font-size:55px; color:#66fcf1; animation: glow 2s infinite alternate;}
+#home p {margin-top:20px; font-size:22px; color:#c5c6c7;}
+@keyframes glow {0%{text-shadow:0 0 10px #45a29e;}100%{text-shadow:0 0 25px #66fcf1;}}
+
+/* Floating shapes */
+.shape {
